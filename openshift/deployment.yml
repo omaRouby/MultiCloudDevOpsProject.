@@ -16,4 +16,4 @@ spec:
       - name: cloud-app
         image: omarrouby/gradelewapp
         ports:
-        - containerPort: 8081
+        - containerPort: 8080
