@@ -1,0 +1,5 @@
+key_name        = "multicloud"
+ami_id          = "ami-04b70fa74e45c3917"
+instance_type   = "t2.micro"
+vpc_cidr        = "10.0.0.0/16"
+alarm_action_arn = "arn:aws:sns:us-east-1:123456789012:CloudWatchNotifications"
