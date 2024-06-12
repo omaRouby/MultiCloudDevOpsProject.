@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: cloud-app
-        image: omarrouby/gradelewapp
+        image: omarrouby/gradle-app
         ports:
         - containerPort: 8080
