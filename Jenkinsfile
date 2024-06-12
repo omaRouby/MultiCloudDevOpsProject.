@@ -1,9 +1,7 @@
 @Library('shared-library') _
 
 pipeline {
-    agent { 
-        label 'ec2-slave'
-    }
+    agent any
     environment {
         DOCKER_IMAGE_NAME = "omarrouby/gradle-app"
         DOCKERHUB_CREDENTIALS_ID = "dockerhub"
