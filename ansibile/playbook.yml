@@ -1,0 +1,5 @@
+---
+- name: Install all
+  hosts: all
+  roles:
+    - sonar 
