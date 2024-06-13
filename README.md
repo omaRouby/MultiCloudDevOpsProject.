@@ -66,7 +66,7 @@ This project outlines the steps to set up an automated CI/CD pipeline using a co
 1. **Integrating with OpenShift**:
     - Use a service account token to link Jenkins with the OpenShift cluster.
     - Configure Jenkins to interact with OpenShift using the OpenShift CLI.
-    ![](https://github.com/omaRouby/MultiCloudDevOpsProject./blob/main/images/oc-token.png)
+    
 ![](https://github.com/omaRouby/MultiCloudDevOpsProject./blob/main/images/sa-token.png)
 
 2. **Jenkins Pipeline**:
