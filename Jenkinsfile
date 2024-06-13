@@ -9,7 +9,7 @@ pipeline {
         OPENSHIFT_CREDENTIALS_ID = "sa-token"
         CLUSTER_URL = "https://api.ocp-training.ivolve-test.com:6443"
     }
-    
+
     stages {
         stage('SonarQube Analysis') {
             steps {
@@ -43,4 +43,17 @@ pipeline {
             steps {
                 script {
                     deployToOpenShift(OPENSHIFT_CREDENTIALS_ID, OPENSHIFT_PROJECT, CLUSTER_URL)
-      
+                }
+            }
+        }
+    }
+
+    post {
+        success {
+            echo "${JOB_NAME}-${BUILD_NUMBER} pipeline succeeded"
+        }
+        failure {
+            echo "${JOB_NAME}-${BUILD_NUMBER} pipeline failed"
+        }
+    }
+}
