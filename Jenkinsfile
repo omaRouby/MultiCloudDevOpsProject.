@@ -8,6 +8,7 @@ pipeline {
         OPENSHIFT_PROJECT = "omarrouby"
         OPENSHIFT_CREDENTIALS_ID = "sa-token"
         CLUSTER_URL = "https://api.ocp-training.ivolve-test.com:6443"
+        SCANNER_HOME  = tool 'sonar'
     }
 
     stages {
