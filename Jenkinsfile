@@ -13,7 +13,7 @@ pipeline {
 
     stages {
 
-        stage('Run Unit Test') {
+        stage('Unit Test') {
             steps {
                 script {
                 	
