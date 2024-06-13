@@ -9,7 +9,14 @@ pipeline {
         OPENSHIFT_CREDENTIALS_ID = "sa-token"
         CLUSTER_URL = "https://api.ocp-training.ivolve-test.com:6443"
     }
-
+    
+     stage('SonarQube Analysis') {
+            steps {
+                script {
+                    SONAR_CHECK()
+                }
+            }
+        }
     stages {
         stage('Build and Push Docker Image') {
             steps {
