@@ -22,7 +22,4 @@ dependencies {
 test {
     useJUnitPlatform()
 }
-java {
-   
-    sourceSets.main.java.srcDirs = ['src']
-}
+
