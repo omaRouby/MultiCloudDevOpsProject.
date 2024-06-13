@@ -17,7 +17,7 @@ pipeline {
             steps {
                 script {
                 	
-                	test
+                	Test
             		
             	}
     	    }
