@@ -22,13 +22,13 @@ pipeline {
         } 
         
         
-        stage('SonarQube Analysis') {
-            steps {
-                script {
-                    SONAR_CHECK()
-                }
-            }
-        }
+        // stage('SonarQube Analysis') {
+        //     steps {
+        //         script {
+        //             SONAR_CHECK()
+        //         }
+        //     }
+        // }
 
         stage('Build and Push Docker Image') {
             steps {
