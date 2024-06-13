@@ -2,4 +2,8 @@
 - name: Install all
   hosts: all
   roles:
+    - docker
+    - jenkins
+    - oc-cli
     - sonar 
+    - jenkinsconfig
