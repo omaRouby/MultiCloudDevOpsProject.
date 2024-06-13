@@ -15,13 +15,11 @@ pipeline {
 
         stage('Unit Test') {
             steps {
-                script {
-                	
-                	Test
-            		
+                script {               	
+                    Test
             	}
     	    }
-	    }
+        } 
         
         
         stage('SonarQube Analysis') {
