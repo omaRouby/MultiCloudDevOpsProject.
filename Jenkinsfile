@@ -12,6 +12,18 @@ pipeline {
     }
 
     stages {
+
+        stage('Run Unit Test') {
+            steps {
+                script {
+                	
+                	test
+            		
+            	}
+    	    }
+	    }
+        
+        
         stage('SonarQube Analysis') {
             steps {
                 script {
