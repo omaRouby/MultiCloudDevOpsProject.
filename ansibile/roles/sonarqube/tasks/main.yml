@@ -1,4 +1,0 @@
----
-- include_tasks: postgresql.yml
-- include_tasks: sonarqube.yml
-
