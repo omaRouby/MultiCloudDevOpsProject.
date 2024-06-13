@@ -2,6 +2,9 @@
 
 pipeline {
     agent any
+     tools {
+        jdk 'jdk-17'
+    }
     environment {
         DOCKER_IMAGE_NAME = "omarrouby/gradle-app"
         DOCKERHUB_CREDENTIALS_ID = "dockerhub"
