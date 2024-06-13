@@ -8,7 +8,7 @@ pipeline {
     }
   
     environment {
-        DOCKER_IMAGE_NAME = "omarrouby/gradle-app"
+        DOCKER_IMAGE_NAME = "omarrouby/ivolve-app"
         DOCKERHUB_CREDENTIALS_ID = "dockerhub"
         OPENSHIFT_PROJECT = "omarrouby"
         OPENSHIFT_CREDENTIALS_ID = "sa-token"
