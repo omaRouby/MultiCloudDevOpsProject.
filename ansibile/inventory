@@ -1,2 +1,5 @@
-[ec2-ip]
-50.16.134.80
+plugin: aws_ec2
+regions:
+  - us-east-1
+filters:
+  instance-state-name: running
