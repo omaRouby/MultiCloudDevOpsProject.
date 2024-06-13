@@ -97,7 +97,7 @@ SonarQube is an essential tool for continuous inspection of code quality. It pro
     - Navigate to **My Account** -> **Security** -> **Generate Tokens**.
     - Create a new token for Jenkins to use.
  ![](https://github.com/omaRouby/MultiCloudDevOpsProject./blob/main/images/generateSonar-token.png)
-![](https://github.com/omaRouby/MultiCloudDevOpsProject./blob/main/images/sonar-token.png)
+
 
   
 3. **Configure SonarQube in Jenkins**:
