@@ -70,6 +70,7 @@ This project outlines the steps to set up an automated CI/CD pipeline using a co
 ![](https://github.com/omaRouby/MultiCloudDevOpsProject./blob/main/images/sa-token.png)
 
 2. **Jenkins Pipeline**:
+    - The Jenkins file uses the shared library https://github.com/omaRouby/multicloud-sharedLibrary.git
     - Define a Jenkins pipeline with stages for unit testing, static code analysis (SonarQube), Docker image build, and deployment to OpenShift.
     - Use the following stages in the pipeline:
         - **Unit Test**: Run unit tests for the application.
