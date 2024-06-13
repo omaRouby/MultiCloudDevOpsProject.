@@ -1,13 +1,33 @@
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
-  name: cloud-route
+  annotations:
+    openshift.io/host.generated: "true"
+  creationTimestamp: "2024-06-13T11:37:07Z"
+  labels:
+    app: ivolve-app
+    app.kubernetes.io/component: ivolve-app
+    app.kubernetes.io/instance: ivolve-app
+  name: ivolve-app
+  namespace: omarrouby
+  resourceVersion: "1287465"
+  uid: 3ad9a845-6d30-4c40-859f-9cb42a84bc86
 spec:
+  host: ivolve-app-omarrouby.apps.ocp-training.ivolve-test.com
+  port:
+    targetPort: 8080-tcp
   to:
     kind: Service
-    name: cloud-app-service
-  port:
-    targetPort: 8081
-  tls:
-    termination: edge
+    name: ivolve-app
+    weight: 100
   wildcardPolicy: None
+status:
+  ingress:
+  - conditions:
+    - lastTransitionTime: "2024-06-13T11:37:07Z"
+      status: "True"
+      type: Admitted
+    host: ivolve-app-omarrouby.apps.ocp-training.ivolve-test.com
+    routerCanonicalHostname: router-default.apps.ocp-training.ivolve-test.com
+    routerName: default
+    wildcardPolicy: None
