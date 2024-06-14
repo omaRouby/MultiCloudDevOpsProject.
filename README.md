@@ -20,7 +20,7 @@ Here's an improved version of your README, with a Table of Contents, prerequisit
 ## Project Overview
 This project outlines the steps to set up an automated CI/CD pipeline using a combination of Terraform, Ansible, Jenkins, Docker, SonarQube, and OpenShift. The goal is to use Terraform to create the necessary infrastructure on AWS, configure Jenkins as the CI/CD server, deploy an application to an OpenShift cluster, and monitor the infrastructure using CloudWatch. Ansible will be used to configure the Jenkins server and install necessary tools and plugins.
 
-![Project Diagram](https://github.com/omaRouby/MultiCloudDevOpsProject./blob/main/images/diag.jpg)
+![Project Diagram](https://github.com/omaRouby/MultiCloudDevOpsProject./blob/main/images/multicloud_devops_architecture.png)
 
 ## Prerequisites
 - AWS account
