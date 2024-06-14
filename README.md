@@ -60,7 +60,7 @@ This project outlines the steps to set up an automated CI/CD pipeline using a co
 ![CloudWatch Alarms](https://github.com/omaRouby/MultiCloudDevOpsProject./blob/main/images/my-cloudwatch.png)
 ![CPU Utilization](https://github.com/omaRouby/MultiCloudDevOpsProject./blob/main/images/cpu-utilization.png)
 ![SNS Topic](https://github.com/omaRouby/MultiCloudDevOpsProject./blob/main/images/snstopic-email.png)
-![](https://github.com/omaRouby/MultiCloudDevOpsProject./blob/main/images/snstopic-email.png)
+![](https://github.com/omaRouby/MultiCloudDevOpsProject./blob/main/images/email-cloudwatch.png)
 
 #### Using Terraform Modules
 - **Modules**: `vpc`, `ec2`, `security-groups`, `cloudwatch-sns`
